@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import warrior from "../img/warrior.jpg";
 const Planets = () => {
   const [planets, setPlanets] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -63,8 +64,11 @@ const Planets = () => {
   return (
     <>
       <div></div>
+
       <div className="break-before-column flex flex-col items-center justify-center gap-4">
-        <h1 className="btn btn-ghost text-2xl font-bold">Planets Directory</h1>
+        <h1 className="btn btn-ghost text-5xl text-white mb-10 font-bold">
+          Planets Directory
+        </h1>
         <div className="grid grid-cols-5 gap-4 m-1">
           {planets.map((planet) => (
             <div className="card w-60 glass">
@@ -103,15 +107,28 @@ const Planets = () => {
         </div>
         <div className="flex items-start justify-center h-screen w-full ">
           <div className="flex flex-col p-6 bg-neutral-900  min-h-[80vh] min-w-[90vw] rounded-xl  items-stretch gap-8">
-            <div className="text-2xl text-white font-extrabold m-4 flex justify-center">
+            <div className="text-2xl btn btn-ghost text-white font-extrabold m-4 flex justify-center">
               Residents of {selectedPlanet?.name}
             </div>
-            <div className="grid grid-cols-3 gap-8">
-              <input
-                type="text"
-                placeholder="Type here"
-                class="input input-bordered input-success w-full max-w-xs"
-              />
+            <div className="min-w-[90vw] carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+              {residents.map((resident) => (
+                <div className="carousel-item">
+                  <div className="card w-80 glass">
+                    <figure>
+                      <img src={warrior} alt="car!" />
+                    </figure>
+                    <div className="card-body">
+                      <h2 className="card-title">{resident.name}</h2>
+                      <p>Height: {resident.height}</p>
+                      <p>Mass: {resident.mass}</p>
+                      <p>Gender: {resident.gender}</p>
+                      <div className="card-actions justify-end">
+                        <button className="btn btn-primary">Know More!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

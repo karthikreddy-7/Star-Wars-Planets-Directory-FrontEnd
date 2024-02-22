@@ -84,6 +84,7 @@ function App() {
                 <img className="w-100 rounded-xl" src={icon} />
               </div>
             </div>
+            <hr class="h-px mt-24 my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
           </div>
           <Planets />
         </>
