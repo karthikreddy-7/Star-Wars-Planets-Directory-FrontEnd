@@ -61,7 +61,7 @@ function App() {
           <div
             style={{
               backgroundSize: "contain",
-              minHeight: "90vh",
+              minHeight: "100vh",
               backdropFilter: "blur(5px)",
             }}
           >
@@ -75,7 +75,7 @@ function App() {
               <NavBar />
             </div>
             <div className="flex items-center justify-center">
-              <div className="mt-14 flex items-center justify-center p-2 gap-8 ">
+              <div className="mt-20 flex items-center justify-center p-2 gap-8 ">
                 <p className=" text-white text-2xl bg-black rounded-xl font-extrabold w-96">
                   Star Wars is a space opera media franchise created by George
                   Lucas. It began with the 1977 film Star Wars: A New Hope and
