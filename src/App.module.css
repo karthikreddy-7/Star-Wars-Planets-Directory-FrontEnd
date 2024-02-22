@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Orbit&family=Orbitron:wght@400..900&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: Orbitron, sans-serif;
+  font-size: 1.5rem;
+  height: 100vh;
+  justify-content: center;
+  transition: height 3s ease-in-out, font-size 3s ease-in-out;
+}
+
+.title.shrink {
+  font-size: calc(2vh + 2vmin);
+  height: 10vh;
+}
+
+.header {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Orbit, sans-serif;
+
+  /* border-radius: 30px; */
+  font-size: calc(5px + 2vmin);
+  justify-content: space-between;
+  min-height: 30vh;
+}
+
+.table {
+  background-color: grey;
+  flex-direction: column;
+  font-family: Obitron, sans-serif;
+  font-size: calc(5px + 2vmin);
+  justify-content: center;
+  max-height: 100vh;
+  overflow: auto;
+}
