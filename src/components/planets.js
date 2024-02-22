@@ -52,13 +52,15 @@ const Planets = () => {
   };
 
   const handleNextPage = async () => {
-    const response = await fetch(
-      `https://swapi.dev/api/planets/?page=${currentPage}`
-    );
-    const data = await response.json();
-    console.log(data);
-    setPlanets(data.results);
-    setCurrentPage(currentPage + 1);
+    if (currentPage < 7) {
+      const response = await fetch(
+        `https://swapi.dev/api/planets/?page=${currentPage}`
+      );
+      const data = await response.json();
+      console.log(data);
+      setPlanets(data.results);
+      setCurrentPage(currentPage + 1);
+    }
   };
 
   return (
