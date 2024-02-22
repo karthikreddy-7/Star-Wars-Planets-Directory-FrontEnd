@@ -35,7 +35,7 @@ const Planets = () => {
   };
   const scrollToCards = () => {
     window.scrollTo({
-      top: 1400,
+      top: 1500,
       behavior: "smooth",
     });
   };
