@@ -3,7 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  background-image: url("./background.jpg");
+  background-image: url("./img/background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;

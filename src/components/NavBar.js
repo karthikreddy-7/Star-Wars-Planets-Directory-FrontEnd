@@ -10,9 +10,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="flex m-1">
-          <div className="btn btn-ghost m-1 font-bold text-black text-xl rounded-full">
-            Look For Planets
-          </div>
+          <div className="btn btn-ghost m-1 font-bold text-black text-xl rounded-full"></div>
         </div>
       </div>
     </>
