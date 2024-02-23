@@ -71,7 +71,7 @@ const Planets = () => {
         <h1 className="btn btn-ghost text-5xl text-white mb-10 font-bold">
           Planets Directory
         </h1>
-        <div className="grid grid-cols-5 gap-4 m-1">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 m-1">
           {planets.map((planet) => (
             <div className="card w-60 glass">
               <div className="card-body">
