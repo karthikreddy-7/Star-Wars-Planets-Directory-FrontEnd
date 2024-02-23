@@ -1,3 +1,40 @@
+# Star Wars Planets Directory
+
+## Overview
+Star Wars Planets Directory is ReactJS project which shows the planets and the residents of starwar movies built as an assignment to Aquera
+### Deployed site without Internal JSON Server is https://star-wars-planets-directory-front-end.vercel.app/
+
+### Total Tech Stack Used:
+- ReactJS
+- TailwindCSS
+- DaisyUI (a tailwindCSS library for easy components styling)
+- HTML
+- fetch API's for data collecting and displaying
+
+### Features Of Star Wars Planets Directory:
+- has a unique way of entering into the website built by reacttyped library for appealing UI
+- shows all the planets in cards with effective pagination
+- uses usestates and useffects for state managament
+- uses carousel for displaying characters
+
+## Demo Images And Explaination
+
+**Home Page/Landing Page when clicked on the site :**
+
+  ![Home Page](demoimg/1.png)
+
+**Hero Page after displaying the entry typed effect :**
+
+  ![Home Page](demoimg/2.png)
+
+**Planets directory page with pagination and cards :**
+
+  ![Home Page](demoimg/3.png)
+
+**Residents of particular planet page with carousels :**
+
+  ![Home Page](demoimg/4.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
